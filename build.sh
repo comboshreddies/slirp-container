@@ -1,2 +1,3 @@
 #!/bin/sh
-docker build -t intangiblemover/slirp:20250725 .
+DAT=$(date +%Y%m%d)
+docker build -t intangiblemover/slirp:"${DAT}" .

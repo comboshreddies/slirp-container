@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: slirp 
+  labels:
+    app: slirp 
+spec:
+  containers:
+  - name:  slirp
+    image: intangiblemover/slirp:20250731
+    ports:
+    - containerPort: 55555
